@@ -1,0 +1,9 @@
+{
+  "BackupDurationSeconds": 600,
+  "MaxStartupSeconds": 120,
+  "MinLogLevel": "Information",
+  "Server": "Colossus",
+  "ProjectRootPath": "C:\\Programming\\",
+  "IncludeAssemblyName": false,
+  "IncludeSource" :  true 
+}

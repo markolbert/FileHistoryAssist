@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FileHistoryService": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

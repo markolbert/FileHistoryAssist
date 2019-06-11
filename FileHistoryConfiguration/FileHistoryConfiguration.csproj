@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>J4JSoftware.FileHistoryConfiguration</AssemblyName>
+    <RootNamespace>J4JSoftware.FileHistory</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\J4JLogging\J4JLogging\J4JLogging.csproj" />
+  </ItemGroup>
+
+</Project>

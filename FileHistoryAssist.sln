@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHistoryService", "FileHistoryService\FileHistoryService.csproj", "{43AC3965-03C2-43E9-88C7-3D4C216DA677}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHistoryTarget", "FileHistoryTarget\FileHistoryTarget.csproj", "{9A2A2350-6C8D-4CCE-A373-DF4BAD767E8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHistory", "FileHistory\FileHistory.csproj", "{B949BF74-DAC9-451E-98E7-BE723EC4B861}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHistoryConfiguration", "FileHistoryConfiguration\FileHistoryConfiguration.csproj", "{487C1774-C456-4D44-83A0-4E98DAD8192F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external", "external", "{9C8775AC-9168-447E-88DB-C3FFEE4D5366}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "J4JLogging", "..\J4JLogging\J4JLogging\J4JLogging.csproj", "{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "J4JTwilioLogging", "..\J4JLogging\J4JTwilioLogging\J4JTwilioLogging.csproj", "{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43AC3965-03C2-43E9-88C7-3D4C216DA677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AC3965-03C2-43E9-88C7-3D4C216DA677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AC3965-03C2-43E9-88C7-3D4C216DA677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AC3965-03C2-43E9-88C7-3D4C216DA677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A2A2350-6C8D-4CCE-A373-DF4BAD767E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A2A2350-6C8D-4CCE-A373-DF4BAD767E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A2A2350-6C8D-4CCE-A373-DF4BAD767E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A2A2350-6C8D-4CCE-A373-DF4BAD767E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B949BF74-DAC9-451E-98E7-BE723EC4B861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B949BF74-DAC9-451E-98E7-BE723EC4B861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B949BF74-DAC9-451E-98E7-BE723EC4B861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B949BF74-DAC9-451E-98E7-BE723EC4B861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{487C1774-C456-4D44-83A0-4E98DAD8192F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487C1774-C456-4D44-83A0-4E98DAD8192F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487C1774-C456-4D44-83A0-4E98DAD8192F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487C1774-C456-4D44-83A0-4E98DAD8192F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341} = {9C8775AC-9168-447E-88DB-C3FFEE4D5366}
+		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07} = {9C8775AC-9168-447E-88DB-C3FFEE4D5366}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0830A3CB-6FB5-42C1-B0CB-08A125EECE2F}
+	EndGlobalSection
+EndGlobal
