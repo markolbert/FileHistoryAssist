@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\J4JLogging\J4JLogging\J4JLogging.csproj" />
     <ProjectReference Include="..\..\J4JLogging\J4JTwilioLogging\J4JTwilioLogging.csproj" />
     <ProjectReference Include="..\FileHistoryTarget\FileHistoryTarget.csproj" />
     <ProjectReference Include="..\FileHistory\FileHistory.csproj" />

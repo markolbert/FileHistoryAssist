@@ -6,15 +6,14 @@ using Serilog;
 
 namespace FileHistoryService
 {
-    public class J4JLoggerConfiguration : IJ4JLoggerConfiguration
+    public class J4JSmsLoggerConfiguration : IJ4JSmsLoggerConfiguration
     {
-        public J4JLoggerConfiguration( IShareConfiguration config, ITwilioConfig twilio )
+        public J4JSmsLoggerConfiguration( IShareConfiguration config, ITwilioConfig twilio )
         {
             if( config == null )
                 throw new NullReferenceException( nameof(config) );
 
             SmsWriter = new StringWriter();
-            SmsLogger = new J4JTwilioLogger(twilio);
             SourceRootPath = config.ProjectRootPath;
             IncludeSource = config.IncludeSource;
             IncludeAssemblyName = config.IncludeAssemblyName;
@@ -26,7 +25,6 @@ namespace FileHistoryService
         public string SourceMessageTemplate { get; }
         public string MemberMessageTemplate { get; }
         public StringWriter SmsWriter { get; }
-        public ISmsLogger SmsLogger { get; }
         public string SourceRootPath { get; }
         public bool IncludeSource { get; }
         public bool IncludeAssemblyName { get; }

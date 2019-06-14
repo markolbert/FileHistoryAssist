@@ -19,7 +19,7 @@ namespace FileHistoryService
 
         private static AutofacServiceProvider _svcProvider;
         private static System.Timers.Timer _timer;
-        private static IJ4JLogger<Program> _logger;
+        private static IJ4JSmsLogger<Program> _logger;
         private static IFileHistoryConfiguration _fhConfig;
         private static IFileHistoryTarget _target;
 
@@ -27,7 +27,7 @@ namespace FileHistoryService
         {
             ConfigureServices(args);
 
-            _logger = _svcProvider.GetRequiredService<IJ4JLogger<Program>>();
+            _logger = _svcProvider.GetRequiredService<IJ4JSmsLogger<Program>>();
 
             Console.CancelKeyPress += Console_CancelKeyPress;
             _logger.IncludeSource().Information("set up CancelKeyPress handler");
@@ -161,14 +161,14 @@ namespace FileHistoryService
                 .As<ITwilioConfig>()
                 .SingleInstance();
 
-            containerBuilder.RegisterType<J4JLoggerConfiguration>()
-                .As<IJ4JLoggerConfiguration>()
+            containerBuilder.RegisterType<J4JSmsLoggerConfiguration>()
+                .As<IJ4JSmsLoggerConfiguration>()
                 .SingleInstance();
 
             containerBuilder.Register<ILogger>( ( c, p ) =>
             {
                 var appConfig = c.Resolve<IShareConfiguration>();
-                var j4jLoggerConfig = c.Resolve<IJ4JLoggerConfiguration>();
+                var j4jLoggerConfig = c.Resolve<IJ4JSmsLoggerConfiguration>();
 
                 return new LoggerConfiguration()
                     .Enrich.FromLogContext()
@@ -186,12 +186,13 @@ namespace FileHistoryService
                     .CreateLogger();
             } );
 
-            containerBuilder.RegisterType<J4JTwilioLogger>()
-                .As<ISmsLogger>()
+            containerBuilder.RegisterType<J4JTwilio>()
+                .As<IJ4JSms>()
                 .SingleInstance();
 
-            containerBuilder.RegisterGeneric( typeof(J4JLogger<>) )
-                .As(typeof(IJ4JLogger<>))
+            containerBuilder.RegisterGeneric( typeof(J4JSmsLogger<>) )
+                .As( typeof(IJ4JSmsLogger<>) )
+                .As( typeof(IJ4JLogger<>) )
                 .SingleInstance();
 
             containerBuilder.RegisterModule<FileHistoryModule>();

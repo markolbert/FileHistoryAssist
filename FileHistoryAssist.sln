@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHistoryConfiguration", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external", "external", "{9C8775AC-9168-447E-88DB-C3FFEE4D5366}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "J4JLogging", "..\J4JLogging\J4JLogging\J4JLogging.csproj", "{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "J4JTwilioLogging", "..\J4JLogging\J4JTwilioLogging\J4JTwilioLogging.csproj", "{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "J4JSmsLogging", "..\J4JLogging\J4JSmsLogging\J4JSmsLogging.csproj", "{19A82E1C-4E54-4991-980F-658205C89090}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,21 +39,21 @@ Global
 		{487C1774-C456-4D44-83A0-4E98DAD8192F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{487C1774-C456-4D44-83A0-4E98DAD8192F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{487C1774-C456-4D44-83A0-4E98DAD8192F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A82E1C-4E54-4991-980F-658205C89090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A82E1C-4E54-4991-980F-658205C89090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A82E1C-4E54-4991-980F-658205C89090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A82E1C-4E54-4991-980F-658205C89090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{DBFA45D5-03DC-4AC6-B783-B59CACCFC341} = {9C8775AC-9168-447E-88DB-C3FFEE4D5366}
 		{F1F10A8C-3CD7-4DD5-A053-7318A8306F07} = {9C8775AC-9168-447E-88DB-C3FFEE4D5366}
+		{19A82E1C-4E54-4991-980F-658205C89090} = {9C8775AC-9168-447E-88DB-C3FFEE4D5366}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0830A3CB-6FB5-42C1-B0CB-08A125EECE2F}

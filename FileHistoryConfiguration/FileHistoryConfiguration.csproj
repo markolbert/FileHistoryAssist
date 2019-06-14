@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\J4JLogging\J4JLogging\J4JLogging.csproj" />
+    <ProjectReference Include="..\..\J4JLogging\J4JSmsLogging\J4JSmsLogging.csproj" />
   </ItemGroup>
 
 </Project>
